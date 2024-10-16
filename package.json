@@ -1,0 +1,21 @@
+{
+  "name": "week-9",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node script",
+    "dev": "nodemon script.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "expres": "^0.0.5",
+    "express": "^4.21.1",
+    "nodemo": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
