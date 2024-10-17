@@ -3,15 +3,18 @@ const multer = require("multer")
 const app = express()
 
 const storage = multer.diskStorage({
-    destination: (req,file,cd)=>{
-        cd(null, '/uploads')
+    destination: (req, file, cb) => {
+        cb(null, __dirname + '/uploads');
+        console.log(__dirname);
+        
     },
-    filename: (req,file,cd)=>{
-        cd(null, file.originalname)
+    
+    filename: (req,file,cb)=>{
+        cb(null, file.originalname)
     }
 })
 
-const upload = multer({dest: 'uploads/'});
+const upload = multer({storage});
 app.get('/',(req,res)=>{
     res.send("hellow world")
 }); 
