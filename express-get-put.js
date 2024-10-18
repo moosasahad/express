@@ -12,7 +12,7 @@ app.use(cors());
 
 let users = [];
 
-// POST /users - Create a user
+// POST /users - Create a useruser
 app.post('/users', (req, res) => {
     const { name, email, username } = req.body;
 
